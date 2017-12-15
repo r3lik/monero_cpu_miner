@@ -1,0 +1,8 @@
+---
+# Installs the bare necessities :)
+
+- hosts: all
+  become: yes
+  roles:
+    - base
+    - docker-base

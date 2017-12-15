@@ -1,0 +1,35 @@
+---
+
+- name: run "apt-get" update 
+  apt: 
+    update_cache: yes
+
+- name: apt-get "Development Tools"
+  apt:
+    name: build-essential
+    state: latest
+
+#- name: apt-get "python-pycurl"
+#  apt:
+#    name: python-pycurl
+#    state: latest
+
+- name: apt-get "Net Tools"
+  apt:
+    name: net-tools
+    state: latest
+
+- name: apt-get "htop"
+  apt:
+    name: htop
+    state: latest
+
+- name: apt-get "vim"
+  apt:
+    name: vim
+    state: latest
+
+- name: pip install "docker-py"
+  pip:
+    name: docker-py
+    
